@@ -1,0 +1,14 @@
+@use "../../styles/utils/variables" as *;
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+
+  .publicationsBtn {
+    background-color: $white;
+    display: block;
+    padding: 1rem;
+    color: $black;
+  }
+}

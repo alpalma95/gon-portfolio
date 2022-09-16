@@ -1,0 +1,10 @@
+@use "../utils/variables" as *;
+
+.main {
+  p {
+    color: blue;
+  }
+}
+.h1 {
+  font-size: $font-titles-big;
+}

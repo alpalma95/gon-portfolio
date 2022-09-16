@@ -1,0 +1,16 @@
+@use "../../styles/utils/variables" as *;
+@use "../../styles/utils/mixins" as *;
+
+.navbar {
+  background-color: $black;
+  font-size: $font-body-small;
+  color: $white;
+  font-family: $font-titles;
+  padding: 1rem 0;
+
+  &Container {
+    @include containerBig;
+    display: flex;
+    justify-content: space-between;
+  }
+}

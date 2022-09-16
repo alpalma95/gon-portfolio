@@ -1,0 +1,15 @@
+@use "../../styles/utils/variables" as *;
+
+.logoContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  .img {
+    width: 100%;
+  }
+
+  .initials {
+    display: block;
+  }
+}

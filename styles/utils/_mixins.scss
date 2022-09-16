@@ -1,0 +1,9 @@
+@mixin containerBig {
+  width: min(90%, 80rem);
+  margin: 0 auto;
+}
+
+@mixin containerSmall {
+  width: min(90%, 70rem);
+  margin: 0 auto;
+}
