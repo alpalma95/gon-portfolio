@@ -4,11 +4,18 @@
   display: flex;
   gap: 1.5rem;
   align-items: center;
+  font-weight: $font-titles-black;
+  cursor: pointer;
 
   .publicationsBtn {
     background-color: $white;
-    display: block;
-    padding: 1rem;
+    border: 1px solid $white;
+    display: inline-block;
+    padding: 0.5rem 1rem;
     color: $black;
+    font-weight: $font-titles-black;
+    border-radius: 100px;
+    font-family: $font-titles;
+    cursor: pointer;
   }
 }

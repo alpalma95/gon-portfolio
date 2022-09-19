@@ -1,0 +1,44 @@
+@use "../../styles/utils/variables" as *;
+
+.contactLinksContainer {
+  width: 40%;
+  padding-top: 1rem;
+
+  .name {
+    text-align: center;
+
+    h1 {
+      font-family: $font-titles;
+      font-size: $font-titles-small;
+      color: $red;
+      margin-bottom: 0.9rem;
+    }
+
+    h2 {
+      font-family: $font-body;
+      font-size: $font-body-small;
+      color: $black;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .links {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: $font-body-small;
+
+    .link {
+      width: fit-content;
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: $black;
+
+      i {
+        font-size: $font-body-big;
+      }
+    }
+  }
+}

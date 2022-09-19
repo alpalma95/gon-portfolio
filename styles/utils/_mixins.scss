@@ -1,9 +1,9 @@
 @mixin containerBig {
-  width: min(90%, 80rem);
+  width: min(90%, 120rem);
   margin: 0 auto;
 }
 
 @mixin containerSmall {
-  width: min(90%, 70rem);
+  width: min(90%, 90rem);
   margin: 0 auto;
 }

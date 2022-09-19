@@ -3,8 +3,6 @@ import Image from "next/image";
 import { useContext } from "react";
 import { Context } from "../store/store";
 
-import Logo from "../assets/logo.png";
-
 import styles from "../styles/pages/publications.module.scss";
 
 const Publications = () => {

@@ -1,0 +1,21 @@
+@use "../../../styles/utils/variables" as *;
+
+.circle {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  filter: blur(7.5rem);
+  background-color: $yellow;
+  position: absolute;
+}
+
+.top {
+  top: -2rem;
+  left: -4rem;
+  z-index: -1;
+}
+
+.bottom {
+  right: 0;
+  bottom: -4rem;
+}

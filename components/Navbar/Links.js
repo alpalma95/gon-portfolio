@@ -1,14 +1,24 @@
+import Link from "next/link";
+
 import styles from "./Links.module.scss";
 
 const Links = () => {
   return (
     <ul className={styles.links}>
-      <li>About</li>
       <li>
-        <button className={styles.publicationsBtn}>Publications</button>
+        <Link href="/">About</Link>
       </li>
-      <li>Transferencia</li>
-      <li>Contact</li>
+      <li>
+        <Link href="/publications">
+          <button className={styles.publicationsBtn}>Publications</button>
+        </Link>
+      </li>
+      <li>
+        <Link href="/transfer">Transferencia</Link>
+      </li>
+      <li>
+        <Link href="/contact">Contact</Link>
+      </li>
     </ul>
   );
 };

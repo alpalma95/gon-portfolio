@@ -1,0 +1,32 @@
+@use "../../styles/utils/variables" as *;
+@use "../../styles/utils/mixins" as *;
+
+.about {
+  padding: 4rem 0;
+
+  &Container {
+    @include containerSmall;
+  }
+
+  &Title {
+    color: $red;
+    font-size: $font-titles-big;
+    font-family: $font-titles;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  &Paragraph {
+    font-family: $font-body;
+    font-size: $font-body-small;
+    line-height: 2rem;
+
+    .p {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
