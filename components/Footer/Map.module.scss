@@ -1,0 +1,8 @@
+@use "../../styles/utils/variables" as *;
+
+.city {
+  color: $white;
+  font-size: $font-body-small;
+  display: block;
+  text-align: center;
+}

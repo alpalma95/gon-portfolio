@@ -1,0 +1,44 @@
+@use "../../styles/utils/mixins" as *;
+@use "../../styles/utils/variables" as *;
+
+.twitter {
+  padding: 3rem 0;
+  background-image: linear-gradient(to top, $white, rgba($white, 0));
+
+  &Container {
+    @include containerSmall;
+    display: grid;
+    place-items: center;
+  }
+
+  &H2 {
+    font-family: $font-titles;
+    font-size: $font-titles-small;
+    color: $red;
+  }
+
+  &Arrow {
+    margin-top: 2rem;
+    color: $red;
+    font-size: 3rem;
+  }
+
+  .userContainer {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    i {
+      font-size: 4rem;
+      color: $black;
+    }
+
+    span {
+      font-family: $font-body;
+      font-size: $font-body-big;
+      font-weight: 700;
+      color: $black;
+    }
+  }
+}

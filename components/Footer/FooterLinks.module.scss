@@ -1,0 +1,21 @@
+@use "../../styles/utils/mixins" as *;
+@use "../../styles/utils/variables" as *;
+
+.footerLinks {
+  color: $white;
+
+  .h3 {
+    font-size: $font-titles-big;
+    font-family: $font-titles;
+    margin-bottom: 1.5rem;
+  }
+
+  .links {
+    font-family: $font-body;
+    font-size: $font-body-small;
+
+    li {
+      margin-bottom: 0.7rem;
+    }
+  }
+}

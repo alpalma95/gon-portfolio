@@ -30,7 +30,6 @@ const About = () => {
             laudantium provident placeat a nostrum, vero reprehenderit expedita
             quod omnis saepe accusantium inventore debitis cupiditate quibusdam.
             Asperiores veritatis, aut maiores deleniti laboriosam error vero?
-            <DecorationCircle position="bottom" />
           </p>
         </div>
       </div>

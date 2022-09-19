@@ -1,9 +1,7 @@
 import styles from "./DecorationCircle.module.scss";
 
-const DecorationCircle = ({ position }) => {
-  const circlePosition = position === "top" ? styles.top : styles.bottom;
-
-  return <div className={`${styles.circle} ${circlePosition}`}></div>;
+const DecorationCircle = () => {
+  return <div className={styles.circle}></div>;
 };
 
 export default DecorationCircle;

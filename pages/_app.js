@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Layout from "../components/Layout";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 import { Provider } from "../store/store";
 
 import "../styles/resets.scss";
@@ -21,6 +22,7 @@ function MyApp({ Component, pageProps }) {
       <Provider>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </Provider>
     </Layout>
   );

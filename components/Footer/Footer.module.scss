@@ -1,0 +1,20 @@
+@use "../../styles/utils/variables" as *;
+@use "../../styles/utils/mixins" as *;
+
+.footer {
+  background-color: $black;
+  padding: 2rem 0;
+
+  &Container {
+    @include containerBig;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10rem;
+  }
+
+  &Logo {
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+}
