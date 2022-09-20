@@ -1,0 +1,49 @@
+@use "../../../styles/utils/variables" as *;
+
+.card {
+  width: min(90%, 50rem);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+  position: relative;
+  height: 9rem;
+
+  .logo {
+    position: relative;
+    height: 100%;
+    width: 20%;
+
+    .image {
+      color: $black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80%;
+      transform: translate(5px, -5px);
+    }
+
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80%;
+      transform: translate(-5px, 5px);
+    }
+  }
+
+  .text {
+    width: 80%;
+    line-height: 2.5rem;
+
+    h2 {
+      font-family: $font-titles;
+      font-size: $font-titles-small;
+      color: $red;
+    }
+
+    p {
+      font-family: $font-body;
+      font-size: $font-body-small;
+    }
+  }
+}
