@@ -1,0 +1,30 @@
+@use "../../styles/utils/mixins" as *;
+@use "../../styles/utils/variables" as *;
+
+.contact {
+  background-image: linear-gradient(to bottom, $white, rgba($white, 0));
+
+  &Container {
+    @include containerSmall;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .photo {
+    width: 50%;
+  }
+
+  .links {
+    width: 50%;
+    text-align: center;
+
+    h2 {
+      color: $red;
+      font-family: $font-titles;
+      font-size: $font-titles-big;
+    }
+  }
+}
