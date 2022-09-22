@@ -1,0 +1,72 @@
+@use "../../styles/utils/variables" as *;
+@use "../../styles/utils/mixins" as *;
+
+.card {
+  width: min(90%, 50rem);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+  position: relative;
+  height: fit-content;
+
+  .logo {
+    position: relative;
+    height: 100%;
+    width: 20%;
+
+    @include screenSmall {
+      width: 30%;
+    }
+
+    .image {
+      color: $black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80%;
+      transform: translate(10px, -10px);
+    }
+
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80%;
+      transform: translate(-8px, 25px);
+    }
+  }
+
+  .text {
+    width: 80%;
+    line-height: 2.5rem;
+
+    @include screenSmall {
+      width: 70%;
+    }
+
+    h2 {
+      font-family: $font-titles;
+      font-size: $font-titles-small;
+      color: $red;
+      line-height: 2rem;
+
+      @include screenSmall {
+        font-size: $font-body-small;
+      }
+    }
+
+    p {
+      font-family: $font-body;
+      font-size: $font-body-small;
+
+      @include screenSmall {
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
+
+      a {
+        border-bottom: 1px dotted $black;
+      }
+    }
+  }
+}

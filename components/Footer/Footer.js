@@ -12,11 +12,19 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
         <FooterLinks />
-        <div className={styles.footerLogo}>
-          <Image src={logoInedyto} alt="logo of Inedyto research group" />
-        </div>
+
         <Map />
       </div>
+      <span className={styles.signature}>
+        Made with 💜 by{" "}
+        <a
+          href="https://alpalma95.github.io/portfolio/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Al
+        </a>
+      </span>
     </footer>
   );
 };

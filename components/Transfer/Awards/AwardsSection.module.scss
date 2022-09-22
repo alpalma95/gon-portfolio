@@ -1,0 +1,12 @@
+@use "../../../styles/utils/mixins" as *;
+
+.cardsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  @include toActive;
+
+  &Fade {
+    @include toInactive;
+  }
+}

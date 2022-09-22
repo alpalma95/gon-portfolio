@@ -6,15 +6,35 @@
   padding: 2rem 0;
 
   &Container {
-    @include containerBig;
+    @include containerSmall;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10rem;
+
+    @include screenSmall {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 5rem;
+    }
   }
 
   &Logo {
     position: relative;
     display: grid;
     place-items: center;
+  }
+
+  .signature {
+    color: $white;
+    width: fit-content;
+    display: block;
+    margin: 2rem auto;
+    font-family: $font-body;
+    font-size: 1.2rem;
+
+    a {
+      border-bottom: 1px dashed $white;
+      font-weight: 700;
+    }
   }
 }

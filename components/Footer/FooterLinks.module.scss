@@ -4,6 +4,12 @@
 .footerLinks {
   color: $white;
 
+  @include screenSmall {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   .h3 {
     font-size: $font-titles-big;
     font-family: $font-titles;

@@ -1,0 +1,8 @@
+@use "../utils/mixins" as *;
+
+.main {
+  @include toActiveTransition;
+  &Fade {
+    @include toInactiveTransition;
+  }
+}

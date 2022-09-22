@@ -8,6 +8,10 @@
   font-family: $font-titles;
   padding: 1rem 0;
 
+  @include screenSmall {
+    display: none;
+  }
+
   &Container {
     @include containerBig;
     display: flex;

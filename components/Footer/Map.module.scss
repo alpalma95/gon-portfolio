@@ -1,8 +1,22 @@
 @use "../../styles/utils/variables" as *;
+@use "../../styles/utils/mixins" as *;
+
+.mapContainer {
+  width: 50%;
+  margin-left: auto;
+
+  @include screenSmall {
+    margin: 1rem auto;
+  }
+}
 
 .city {
   color: $white;
   font-size: $font-body-small;
   display: block;
-  text-align: center;
+  text-align: end;
+
+  @include screenSmall {
+    text-align: center;
+  }
 }

@@ -1,8 +1,13 @@
 @use "../../styles/utils/variables" as *;
+@use "../../styles/utils/mixins" as *;
 
 .contactLinksContainer {
   width: 40%;
   padding-top: 1rem;
+
+  @include screenSmall {
+    width: 100%;
+  }
 
   .name {
     text-align: center;
@@ -19,6 +24,10 @@
       font-size: $font-body-small;
       color: $black;
       margin-bottom: 2.5rem;
+
+      @include screenSmall {
+        margin-bottom: 1.5rem;
+      }
     }
   }
 
@@ -30,7 +39,7 @@
 
     .link {
       width: fit-content;
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
       display: flex;
       align-items: center;
       gap: 1rem;

@@ -9,8 +9,21 @@ const Twitter = () => {
           <i className="fa-solid fa-angles-down"></i>
         </span>
         <div className={styles.userContainer}>
-          <i className="fa-brands fa-twitter"></i>
-          <span>@GonzoDiCo</span>
+          <a
+            href="https://twitter.com/GonzoDiCo"
+            target="_blank"
+            rel="noreferrer"
+            className="fa-brands fa-twitter"
+          ></a>
+          <span>
+            <a
+              href="https://twitter.com/GonzoDiCo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @GonzoDiCo
+            </a>
+          </span>
         </div>
       </div>
     </section>

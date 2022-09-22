@@ -1,0 +1,25 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.main {
+  @include toActiveTransition;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &Fade {
+    @include toInactiveTransition;
+  }
+}
+.h1 {
+  font-size: $font-titles-big;
+  font-family: $font-titles;
+  color: $red;
+
+  &Sub {
+    font-family: $font-body;
+    font-size: $font-body-big;
+    color: $black;
+    margin-bottom: 2rem;
+  }
+}

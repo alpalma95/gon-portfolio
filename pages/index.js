@@ -6,7 +6,7 @@ import Twitter from "../components/Index/Twitter";
 
 import styles from "../styles/pages/index.module.scss";
 
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Context } from "../store/store";
 
 export default function Home() {
@@ -20,7 +20,9 @@ export default function Home() {
         <link rel="icon" type="icon" sizes="32x32" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main
+        className={`${styles.main} ${store.fadeCurrent ? styles.mainFade : ""}`}
+      >
         <Hero />
         <About />
         <Twitter />

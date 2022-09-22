@@ -1,3 +1,5 @@
+@use "./animations" as *;
+
 @mixin containerBig {
   width: min(90%, 120rem);
   margin: 0 auto;
@@ -6,4 +8,51 @@
 @mixin containerSmall {
   width: min(90%, 90rem);
   margin: 0 auto;
+}
+
+@mixin arrowDown {
+  animation: arrowDown 1s ease;
+  animation-iteration-count: infinite;
+}
+
+@mixin toInactive {
+  opacity: 1;
+  animation: toInactive 0.2s ease;
+  animation-fill-mode: forwards;
+}
+
+@mixin toActive {
+  opacity: 0;
+  animation: toActive 0.2s ease;
+  animation-fill-mode: forwards;
+}
+
+@mixin toInactiveTransition {
+  transition: all 0.4s;
+
+  opacity: 0;
+  transform: translateX(-2rem);
+}
+
+@mixin toActiveTransition {
+  transition: all 0.4s;
+
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@mixin showLinks {
+  animation: showLinks 0.4s ease-out 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@mixin fadeLinks {
+  animation: fadeLinks 0.4s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@mixin screenSmall {
+  @media (max-width: 750px) {
+    @content;
+  }
 }

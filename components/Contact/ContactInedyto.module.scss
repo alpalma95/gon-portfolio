@@ -1,0 +1,76 @@
+@use "../../styles/utils/mixins" as *;
+@use "../../styles/utils/variables" as *;
+
+.contact {
+  background-image: linear-gradient(to top, $white, rgba($white, 0));
+
+  &Container {
+    @include containerSmall;
+    padding: 4rem 0;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include screenSmall {
+      flex-direction: column;
+    }
+  }
+  .title {
+    color: $red;
+    font-family: $font-titles;
+    font-size: $font-titles-big;
+    margin-bottom: 4rem;
+
+    &Span {
+      color: $black;
+      display: block;
+      font-family: $font-body;
+      font-size: $font-body-big;
+      margin-left: 1rem;
+    }
+  }
+  .photo {
+    width: 30%;
+    @include screenSmall {
+      width: 80%;
+    }
+  }
+
+  .links {
+    width: 50%;
+
+    @include screenSmall {
+      width: 80%;
+      margin-top: 1rem;
+    }
+
+    h2 {
+      color: $red;
+      font-family: $font-titles;
+      font-size: $font-titles-small;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      width: fit-content;
+      margin: 0 auto;
+
+      li {
+        a {
+          display: flex;
+          gap: 2rem;
+          color: $black;
+          font-size: $font-body-big;
+          margin-bottom: 1.5rem;
+
+          .newLine {
+            white-space: pre;
+          }
+        }
+      }
+    }
+  }
+}

@@ -12,24 +12,24 @@ const About = () => {
         </div>
         <div className={styles.aboutParagraph}>
           <p className={styles.p}>
-            <strong>Lorem ipsum dolor</strong> sit amet consectetur, adipisicing
-            elit. Ducimus consectetur voluptas alias laudantium iusto temporibus
-            repudiandae perferendis illo tempora commodi nobis magni labore
-            vitae explicabo, iure, neque adipisci mollitia repellat accusamus,
-            beatae quam asperiores? Perspiciatis minus nisi voluptatum repellat!
-            Autem sequi, delectus, asperiores quas architecto voluptas
-            exercitationem obcaecati molestiae odit voluptates voluptatibus aut
-            facere earum, laboriosam nesciunt deleniti iste nam?
+            I am Gonzalo Díaz Cobacho, I am currently studying for a PhD in
+            philosophy in which I am researching issues related to pluralism and
+            the determination of death and I have a contract as a Project
+            Researcher in the Philosophy I Department. In addition, I am
+            interested in other topics where ethics can play a key role such as
+            end-of-life issues, artificial intelligence, conscientious objection
+            and problems with vaccination.
           </p>
 
           <p className={styles.p}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-            cupiditate facere provident incidunt, atque repellat omnis
-            temporibus non sequi voluptates quis vel iure error nam porro sit
-            amet iusto tenetur fugiat quos quisquam. Neque officia optio
-            laudantium provident placeat a nostrum, vero reprehenderit expedita
-            quod omnis saepe accusantium inventore debitis cupiditate quibusdam.
-            Asperiores veritatis, aut maiores deleniti laboriosam error vero?
+            I have a degree in Humanities from the University of Cadiz, a degree
+            I finished in 2017. In addition, I hold a master&apos;s degree in
+            Contemporary Philosophy from the University of Granada, which I
+            finished in 2018. Complementarily, in 2019 I obtained a Diploma of
+            Specialization in Bioethics by the Andalusian School of Public
+            Health in which I researched on &quot;Pluralism in death&quot;. I
+            have also received a research grant from the Grifols i Lucas
+            Foundation and a research grant from the Banc Sabadell.
           </p>
         </div>
       </div>

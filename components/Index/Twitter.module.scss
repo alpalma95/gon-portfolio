@@ -18,9 +18,10 @@
   }
 
   &Arrow {
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: $red;
     font-size: 3rem;
+    @include arrowDown;
   }
 
   .userContainer {
@@ -29,16 +30,18 @@
     align-items: center;
     gap: 2rem;
 
-    i {
+    a {
       font-size: 4rem;
       color: $black;
     }
 
     span {
-      font-family: $font-body;
-      font-size: $font-body-big;
-      font-weight: 700;
-      color: $black;
+      a {
+        font-family: $font-body;
+        font-size: $font-body-big;
+        font-weight: 700;
+        color: $black;
+      }
     }
   }
 }

@@ -1,0 +1,30 @@
+@use "../../styles/utils/variables" as *;
+
+.pills {
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+  position: sticky;
+  top: 20px;
+  z-index: 2;
+  background-color: rgba($white, 0.7);
+  width: fit-content;
+
+  &Btn {
+    padding: 1rem 2rem;
+    border: 1px solid $black;
+    border-radius: 5px;
+    background-color: $white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+  .active {
+    background-color: $black;
+    color: $white;
+    // font-weight: 700;
+  }
+}

@@ -7,38 +7,57 @@ const ContactGon = () => {
   return (
     <section className={styles.contact}>
       <div className={styles.contactContainer}>
-        <h1>
+        <h1 className={styles.title}>
           Contact
-          <span>personal info</span>
+          <span className={styles.titleSpan}>personal info</span>
         </h1>
         <div className={styles.content}>
           <div className={styles.photo}>
             <Image src={photo} alt="Picture of Gonzalo" />
           </div>
           <div className={styles.links}>
-            <h2>Gonzalo Díaz Cobacho</h2>
             <ul>
               <li>
-                <a href="#">
-                  <span className={styles.icon}>icon</span>
-                  <span className={styles.text}>elPutoAmo@ugr.es</span>
+                <a href="mailto:gdc@ugr.es">
+                  <span className={styles.icon}>
+                    <i className="fa-solid fa-envelope"></i>
+                  </span>
+                  <span className={styles.text}>gdc@ugr.es</span>
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <span className={styles.icon}>icon</span>
+                <a
+                  href="https://www.linkedin.com/in/gonzalo-d%C3%ADaz-cobacho-2297b8193/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className={styles.icon}>
+                    <i className="fa-brands fa-linkedin-in"></i>
+                  </span>
                   <span className={styles.text}>Gonzalo Díaz Cobacho</span>
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <span className={styles.icon}>icon</span>
+                <a
+                  href="https://www.researchgate.net/profile/Gonzalo-Diaz-Cobacho"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className={styles.icon}>
+                    <i className="fa-brands fa-researchgate"></i>
+                  </span>
                   <span className={styles.text}>Gonzalo Díaz-Cobacho</span>
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <span className={styles.icon}>icon</span>
+                <a
+                  href="https://twitter.com/GonzoDiCo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className={styles.icon}>
+                    <i className="fa-brands fa-twitter"></i>
+                  </span>
                   <span className={styles.text}>@GonzoDiCo</span>
                 </a>
               </li>

@@ -7,10 +7,17 @@
     rgba($white, 1),
     rgba($white, 0)
   );
-  padding: 10rem 0;
+  padding: 5rem 0;
+
+  @include screenSmall {
+  }
   &Container {
     @include containerSmall;
     display: flex;
     justify-content: space-between;
+
+    @include screenSmall {
+      flex-direction: column;
+    }
   }
 }

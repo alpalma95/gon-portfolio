@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Layout from "../components/Layout";
 import Navbar from "../components/Navbar/Navbar";
+import NavbarMobile from "../components/Navbar/mobile/NavbarMobile";
 import Footer from "../components/Footer/Footer";
 import { Provider } from "../store/store";
 
@@ -20,6 +21,7 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <Provider>
+        <NavbarMobile />
         <Navbar />
         <Component {...pageProps} />
         <Footer />

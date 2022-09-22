@@ -2,7 +2,11 @@
 @use "../../styles/utils/mixins" as *;
 
 .about {
-  padding: 10rem 0;
+  padding: 5rem 0;
+
+  @include screenSmall {
+    padding: 2rem 0;
+  }
 
   &Container {
     @include containerSmall;

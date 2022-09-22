@@ -1,9 +1,14 @@
 @use "../../styles/utils/variables" as *;
+@use "../../styles/utils/mixins" as *;
 
 .photoContainer {
   position: relative;
   width: 40%;
   height: 40vh;
+  @include screenSmall {
+    width: 80%;
+    margin: 0 auto;
+  }
 
   &Img {
     width: 100%;

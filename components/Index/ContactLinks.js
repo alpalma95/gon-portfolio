@@ -9,20 +9,43 @@ const ContactLinks = () => {
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <i className="fa-solid fa-envelope"></i>
-          <span>elPutoAmo@ugr.es</span>
+          <a href="mailto:gdc@ugr.es" className={styles.link}>
+            <i className="fa-solid fa-envelope"></i>
+            <span>gdc@ugr.es</span>
+          </a>
         </li>
         <li className={styles.link}>
-          <i className="fa-brands fa-linkedin-in"></i>
-          <span>Gonzalo Díaz Cobacho</span>
+          <a
+            href="https://www.linkedin.com/in/gonzalo-d%C3%ADaz-cobacho-2297b8193/"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.link}
+          >
+            <i className="fa-brands fa-linkedin-in"></i>
+            <span>Gonzalo Díaz Cobacho</span>
+          </a>
         </li>
         <li className={styles.link}>
-          <i className="fa-brands fa-researchgate"></i>
-          <span>Gonzalo Díaz-Cobacho</span>
+          <a
+            href="https://www.researchgate.net/profile/Gonzalo-Diaz-Cobacho"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.link}
+          >
+            <i className="fa-brands fa-researchgate"></i>
+            <span>Gonzalo Díaz-Cobacho</span>
+          </a>
         </li>
         <li className={styles.link}>
-          <i className="fa-solid fa-arrow-up-right-from-square"></i>
-          <span>www.inedyto.com</span>
+          <a
+            href="https://www.inedyto.com/"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.link}
+          >
+            <i className="fa-solid fa-arrow-up-right-from-square"></i>
+            <span>www.inedyto.com</span>
+          </a>
         </li>
       </ul>
     </div>
