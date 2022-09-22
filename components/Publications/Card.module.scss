@@ -49,6 +49,7 @@
       font-size: $font-titles-small;
       color: $red;
       line-height: 2rem;
+      margin-bottom: 1rem;
 
       @include screenSmall {
         font-size: $font-body-small;
@@ -58,6 +59,7 @@
     p {
       font-family: $font-body;
       font-size: $font-body-small;
+      line-height: 2rem;
 
       @include screenSmall {
         font-size: 1.2rem;
