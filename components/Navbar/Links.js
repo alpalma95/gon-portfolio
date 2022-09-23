@@ -42,14 +42,14 @@ const Links = () => {
       </li>
       <li>
         <Link href="/publications">
-          <button
+          <a
             className={styles.publicationsBtn}
             onClick={(e) => {
               navigationHandler(e, "/publications");
             }}
           >
             Publications
-          </button>
+          </a>
         </Link>
       </li>
       <li>
