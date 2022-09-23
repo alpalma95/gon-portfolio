@@ -13,7 +13,7 @@
   }
 
   &Container {
-    @include containerBig;
+    @include containerSmall;
     display: flex;
     justify-content: space-between;
   }
