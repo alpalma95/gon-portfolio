@@ -1,12 +1,12 @@
 import Card from "./Card";
 
-import { publications } from "./content";
+// import { publications } from "./content";
 import { useContext } from "react";
 import { Context } from "../../store/store";
 
 import styles from "./CardsSection.module.scss";
 
-const CardsSection = () => {
+const CardsSection = ({ publications }) => {
   const { store, actions } = useContext(Context);
 
   return (
@@ -16,7 +16,7 @@ const CardsSection = () => {
       }`}
     >
       {publications.map((x, i) => (
-        <Card key={i} title={x.title} citation={x.citation} />
+        <Card key={i} title={x.card.title} citation={x.card.citation} />
       ))}
     </div>
   );

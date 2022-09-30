@@ -8,10 +8,47 @@ import { useContext, useEffect } from "react";
 import { Context } from "../store/store";
 
 import styles from "../styles/pages/publications.module.scss";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
-const Publications = () => {
+export async function getStaticProps() {
+  const client = new ApolloClient({
+    uri: "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl8o8r4tn0mdg01tcgc4053pj/master",
+    cache: new InMemoryCache(),
+  });
+
+  const { data } = await client.query({
+    query: gql`
+      query MyQuery {
+        publications {
+          card {
+            title
+            citation
+            link
+          }
+        }
+        conferences {
+          card {
+            title
+            citation
+            link
+          }
+        }
+      }
+    `,
+  });
+
+  return {
+    props: {
+      publications: data.publications,
+      conferences: data.conferences,
+    },
+  };
+}
+
+const Publications = ({ publications, conferences }) => {
   const { store, actions } = useContext(Context);
 
+  // console.log(publications[0].card.title, conferences);
   return (
     <>
       <Head>
@@ -26,7 +63,11 @@ const Publications = () => {
           <h1 className={styles.h1}>Publications</h1>
           <h1 className={styles.h1Sub}>and Conferences</h1>
           <Pills />
-          {store.showPublications ? <CardsSection /> : <ConferencesSection />}
+          {store.showPublications ? (
+            <CardsSection publications={publications} />
+          ) : (
+            <ConferencesSection conferences={conferences} />
+          )}
         </div>
       </main>
     </>

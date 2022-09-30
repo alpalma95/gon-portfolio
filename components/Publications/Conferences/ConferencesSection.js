@@ -1,11 +1,10 @@
 import ConferencesCard from "./ConferencesCard";
-import { conferences } from "./conferencesContent";
 import { useContext } from "react";
 import { Context } from "../../../store/store";
 
 import styles from "./ConferencesSection.module.scss";
 
-const ConferencesSection = () => {
+const ConferencesSection = ({ conferences }) => {
   const { store, actions } = useContext(Context);
 
   return (
@@ -15,7 +14,11 @@ const ConferencesSection = () => {
       }`}
     >
       {conferences.map((x, i) => (
-        <ConferencesCard key={i} title={x.title} citation={x.citation} />
+        <ConferencesCard
+          key={i}
+          title={x.card.title}
+          citation={x.card.citation}
+        />
       ))}
     </div>
   );
