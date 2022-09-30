@@ -23,12 +23,6 @@ const PillsTransfer = () => {
       >
         Awards
       </button>
-      <button
-        className={`${styles.pillsBtn} ${store.showOther ? styles.active : ""}`}
-        onClick={actions.setShowOther}
-      >
-        Other
-      </button>
     </div>
   );
 };

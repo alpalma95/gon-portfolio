@@ -28,6 +28,10 @@
 
   .toggle {
     cursor: pointer;
+    display: block;
+    color: $white;
+    font-size: 3rem;
+    transform: translate(1.2rem, 0.41rem);
   }
 
   &Open {
@@ -50,8 +54,8 @@
       padding: 10rem 4rem;
 
       .toggle {
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
         position: absolute;
         top: 2rem;
         right: 2rem;

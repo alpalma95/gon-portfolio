@@ -1,12 +1,12 @@
 import Card from "../Publications/Card";
 
-import { transfer } from "./contentTransfer";
+// import { transfer } from "./contentTransfer";
 import { useContext } from "react";
 import { Context } from "../../store/store";
 
 import styles from "./CardsTransfer.module.scss";
 
-const CardsTransfer = () => {
+const CardsTransfer = ({ transfers }) => {
   const { store, actions } = useContext(Context);
 
   return (
@@ -15,8 +15,13 @@ const CardsTransfer = () => {
         store.fadePublications ? styles.cardsSectionFade : ""
       }`}
     >
-      {transfer.map((x, i) => (
-        <Card key={i} title={x.title} citation={x.citation} link={x.link} />
+      {transfers.map((x, i) => (
+        <Card
+          key={i}
+          title={x.card.title}
+          citation={x.card.citation}
+          link={x.card.link}
+        />
       ))}
     </div>
   );

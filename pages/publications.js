@@ -14,6 +14,11 @@ export async function getStaticProps() {
   const client = new ApolloClient({
     uri: "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl8o8r4tn0mdg01tcgc4053pj/master",
     cache: new InMemoryCache(),
+    defaultOptions: {
+      query: {
+        fetchPolicy: "no-cache",
+      },
+    },
   });
 
   const { data } = await client.query({
@@ -48,7 +53,6 @@ export async function getStaticProps() {
 const Publications = ({ publications, conferences }) => {
   const { store, actions } = useContext(Context);
 
-  // console.log(publications[0].card.title, conferences);
   return (
     <>
       <Head>

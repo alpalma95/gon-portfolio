@@ -96,7 +96,6 @@ export const Provider = (props) => {
 
     setNavbarOpen: () => {
       setStore({ ...store, navbarOpen: !store.navbarOpen });
-      console.log("I'm working even tho I shouldnt");
     },
     closeNavbar: () => {
       setStore({ ...store, navbarOpen: false });
