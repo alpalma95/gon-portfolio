@@ -49,6 +49,7 @@ export async function getStaticProps() {
       transfers: data.transfers,
       awards: data.awards,
     },
+    revalidate: 10,
   };
 }
 

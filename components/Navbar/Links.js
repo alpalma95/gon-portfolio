@@ -13,14 +13,9 @@ const Links = () => {
     actions.setFadeCurrentTrue();
     if (store.navbarOpen) actions.setFadeLinks();
 
-    setTimeout(() => {
-      Router.push(route);
-
-      setTimeout(() => {
-        actions.setFadeCurrentFalse();
-        actions.closeNavbar();
-      }, 100);
-    }, 200);
+    Router.push(route);
+    actions.setFadeCurrentFalse();
+    actions.closeNavbar();
   };
 
   return (
