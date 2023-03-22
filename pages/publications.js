@@ -47,7 +47,7 @@ export async function getStaticProps() {
       publications: data.publications,
       conferences: data.conferences,
     },
-    revalidate: 10,
+    revalidate: 30,
   };
 }
 
