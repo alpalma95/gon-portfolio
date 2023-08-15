@@ -7,6 +7,7 @@
 
   @include screenSmall {
     width: 100%;
+    padding-top: 2.5rem;
   }
 
   .name {
@@ -22,7 +23,7 @@
     h2 {
       font-family: $font-body;
       font-size: $font-body-small;
-      color: $black;
+      color: $white;
       margin-bottom: 2.5rem;
 
       @include screenSmall {
@@ -43,7 +44,7 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      color: $black;
+      color: $white;
 
       i {
         font-size: $font-body-big;

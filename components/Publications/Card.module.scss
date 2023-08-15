@@ -19,7 +19,7 @@
     }
 
     .image {
-      color: $black;
+      color: $white;
       position: absolute;
       top: 0;
       left: 0;
@@ -39,6 +39,7 @@
   .text {
     width: 80%;
     line-height: 2.5rem;
+    color: $white;
 
     @include screenSmall {
       width: 70%;
@@ -67,7 +68,8 @@
       }
 
       a {
-        border-bottom: 1px dotted $black;
+        border-bottom: 1px dotted $white;
+        font-weight: 700;
       }
     }
   }

@@ -4,9 +4,8 @@
 .photoContainer {
   position: relative;
   width: 40%;
-  height: 40vh;
   @include screenSmall {
-    width: 80%;
+    width: min(80%, 34rem);
     margin: 0 auto;
   }
 
@@ -19,7 +18,6 @@
 
   &Bg {
     width: 100%;
-    position: absolute;
     transform: translate(-1rem, 1rem);
   }
 }

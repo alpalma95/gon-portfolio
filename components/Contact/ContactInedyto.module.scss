@@ -2,8 +2,6 @@
 @use "../../styles/utils/variables" as *;
 
 .contact {
-  background-image: linear-gradient(to top, $white, rgba($white, 0));
-
   &Container {
     @include containerSmall;
     padding: 4rem 0;
@@ -25,7 +23,7 @@
     margin-bottom: 4rem;
 
     &Span {
-      color: $black;
+      color: $white;
       display: block;
       font-family: $font-body;
       font-size: $font-body-big;
@@ -62,7 +60,7 @@
         a {
           display: flex;
           gap: 2rem;
-          color: $black;
+          color: $white;
           font-size: $font-body-big;
           margin-bottom: 1.5rem;
 

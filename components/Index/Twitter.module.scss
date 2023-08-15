@@ -3,7 +3,6 @@
 
 .twitter {
   padding: 3rem 0;
-  background-image: linear-gradient(to top, $white, rgba($white, 0));
 
   &Container {
     @include containerSmall;
@@ -32,7 +31,7 @@
 
     a {
       font-size: 4rem;
-      color: $black;
+      color: $white;
     }
 
     span {
@@ -40,7 +39,7 @@
         font-family: $font-body;
         font-size: $font-body-big;
         font-weight: 700;
-        color: $black;
+        color: $white;
       }
     }
   }

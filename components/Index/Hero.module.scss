@@ -2,11 +2,6 @@
 @use "../../styles/utils/mixins" as *;
 
 .hero {
-  background-image: linear-gradient(
-    to bottom,
-    rgba($white, 1),
-    rgba($white, 0)
-  );
   padding: 5rem 0;
 
   @include screenSmall {

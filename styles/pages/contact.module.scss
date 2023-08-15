@@ -5,7 +5,7 @@
   @include toActiveTransition;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  background-color: $black;
 
   &Fade {
     @include toInactiveTransition;

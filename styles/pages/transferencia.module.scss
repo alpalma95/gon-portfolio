@@ -2,8 +2,8 @@
 @use "../utils/mixins" as *;
 
 .main {
-  background-image: linear-gradient(to bottom, $white, rgba($white, 0));
   @include toActiveTransition;
+  background-color: $black;
 
   &Fade {
     @include toInactiveTransition;
