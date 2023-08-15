@@ -47,6 +47,17 @@ const ContactLinks = () => {
             <span>www.inedyto.com</span>
           </a>
         </li>
+        <li className={styles.link}>
+        <a
+            href="https://scholar.google.com/citations?user=canOLOEAAAAJ&hl=es"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.link}
+          >
+            <i className="fa-brands fa-google"></i>
+            <span>Gonzalo Díaz-Cobacho</span>
+          </a>
+        </li>
       </ul>
     </div>
   );

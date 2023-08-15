@@ -61,6 +61,18 @@ const ContactGon = () => {
                   <span className={styles.text}>@GonzoDiCo</span>
                 </a>
               </li>
+              <li className={styles.link}>
+                <a
+                  href="https://scholar.google.com/citations?user=canOLOEAAAAJ&hl=es"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className={styles.icon}>
+                    <i className="fa-brands fa-google"></i>
+                  </span>
+                  <span className={styles.text}>Gonzalo Díaz-Cobacho</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
