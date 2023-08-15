@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import awardImg from "../../../public/assets/award.png";
+import awardImg from "../../../public/assets/award.svg";
 import profileBg from "../../../public/assets/profile-bg.svg";
 
 import styles from "./AwardsCard.module.scss";

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import newspaper from "../../public/assets/newspaper.png";
+import newspaper from "../../public/assets/newspaper.svg";
 import profileBg from "../../public/assets/profile-bg.svg";
 
 import styles from "./Card.module.scss";

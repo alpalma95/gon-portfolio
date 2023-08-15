@@ -7,7 +7,6 @@ const About = () => {
     <section className={styles.about}>
       <div className={styles.aboutContainer}>
         <div className={styles.aboutTitle}>
-          <DecorationCircle position={"top"} />
           <h1>About me</h1>
         </div>
         <div className={styles.aboutParagraph}>
