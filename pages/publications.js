@@ -29,6 +29,7 @@ export async function getStaticProps() {
             title
             citation
             link
+            date
           }
         }
         conferences {
@@ -36,11 +37,15 @@ export async function getStaticProps() {
             title
             citation
             link
+            date
           }
         }
       }
     `,
   });
+
+  data.publications.sort((a, b) => new Date(a.card.date) - new Date(b.card.date))
+  data.conferences.sort((a, b) => new Date(a.card.date) - new Date(b.card.date))
 
   return {
     props: {

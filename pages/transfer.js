@@ -31,6 +31,7 @@ export async function getStaticProps() {
             title
             citation
             link
+            date
           }
         }
         awards {
@@ -38,11 +39,15 @@ export async function getStaticProps() {
             title
             citation
             link
+            date
           }
         }
       }
     `,
   });
+
+  data.transfers.sort((a, b) => new Date(a.card.date) - new Date(b.card.date))
+  data.awards.sort((a, b) => new Date(a.card.date) - new Date(b.card.date))
 
   return {
     props: {

@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
         />
-        <link rel="icon" href="../public/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
       <Provider>
         <NavbarMobile />
