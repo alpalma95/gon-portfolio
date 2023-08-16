@@ -14,7 +14,7 @@ import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 export async function getStaticProps() {
   const client = new ApolloClient({
-    uri: "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl8o8r4tn0mdg01tcgc4053pj/master",
+    uri: process.env.HG_URL,
     cache: new InMemoryCache(),
     defaultOptions: {
       query: {
