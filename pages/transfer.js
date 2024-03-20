@@ -46,8 +46,8 @@ export async function getStaticProps() {
     `,
   });
 
-  data.transfers.sort((a, b) => new Date(a.card.date) - new Date(b.card.date))
-  data.awards.sort((a, b) => new Date(a.card.date) - new Date(b.card.date))
+  data.transfers.sort((a, b) => new Date(b.card.date) - new Date(a.card.date));
+  data.awards.sort((a, b) => new Date(b.card.date) - new Date(a.card.date));
 
   return {
     props: {

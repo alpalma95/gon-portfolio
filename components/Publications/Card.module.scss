@@ -40,6 +40,7 @@
     width: 80%;
     line-height: 2.5rem;
     color: $white;
+    text-align: justify;
 
     @include screenSmall {
       width: 70%;

@@ -44,8 +44,12 @@ export async function getStaticProps() {
     `,
   });
 
-  data.publications.sort((a, b) => new Date(a.card.date) - new Date(b.card.date))
-  data.conferences.sort((a, b) => new Date(a.card.date) - new Date(b.card.date))
+  data.publications.sort(
+    (a, b) => new Date(b.card.date) - new Date(a.card.date)
+  );
+  data.conferences.sort(
+    (a, b) => new Date(b.card.date) - new Date(a.card.date)
+  );
 
   return {
     props: {

@@ -24,6 +24,7 @@ const Card = ({ title, citation, link }) => {
 
       <div className={styles.text}>
         <h2>{title}</h2>
+
         <p>
           {citation} {!link ? "" : linkToArticle}
         </p>

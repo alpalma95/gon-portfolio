@@ -16,7 +16,12 @@ const CardsSection = ({ publications }) => {
       }`}
     >
       {publications.map((x, i) => (
-        <Card key={i} title={x.card.title} citation={x.card.citation} />
+        <Card
+          key={i}
+          title={x.card.title}
+          citation={x.card.citation}
+          link={x.card.link}
+        />
       ))}
     </div>
   );
