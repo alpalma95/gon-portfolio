@@ -17,7 +17,7 @@ const FooterLinks = () => {
         </li>
         <li>
           <a
-            href="http://wpd.ugr.es/~filolab/wordpress/en/"
+            href="http://wpd.ugr.es/~filolab/wordpress/"
             target="_blank"
             rel="noreferrer"
           >
