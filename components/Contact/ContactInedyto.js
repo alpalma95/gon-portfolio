@@ -8,7 +8,7 @@ const ContactInedyto = () => {
     <section className={styles.contact}>
       <div className={styles.contactContainer}>
         <h1 className={styles.title}>
-          INEDyTO
+          INEDyTO II
           <span className={styles.titleSpan}>research group</span>
         </h1>
         <div className={styles.content}>
