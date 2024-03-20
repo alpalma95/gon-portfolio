@@ -39,6 +39,7 @@
 
   .links {
     width: 50%;
+    font-family: $font-body;
 
     @include screenSmall {
       width: 80%;

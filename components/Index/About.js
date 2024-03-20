@@ -1,5 +1,3 @@
-import DecorationCircle from "./About/DecorationCircle";
-
 import styles from "./About.module.scss";
 
 const About = () => {
@@ -13,11 +11,10 @@ const About = () => {
           <p className={styles.p}>
             I am Gonzalo Díaz Cobacho, I am currently studying for a PhD in
             philosophy in which I am researching issues related to pluralism and
-            the determination of death and I have a contract as a Project
-            Researcher in the Philosophy I Department. In addition, I am
-            interested in other topics where ethics can play a key role such as
-            end-of-life issues, artificial intelligence, conscientious objection
-            and problems with vaccination.
+            the determination of death. In addition, I am interested in other
+            topics where ethics can play a key role such as end-of-life issues,
+            Artificial Intelligence, conscientious objection and problems with
+            vaccination.
           </p>
 
           <p className={styles.p}>

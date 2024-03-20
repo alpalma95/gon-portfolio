@@ -28,6 +28,7 @@
 
     .p {
       position: relative;
+      text-align: justify;
 
       &:not(:last-child) {
         margin-bottom: 3rem;

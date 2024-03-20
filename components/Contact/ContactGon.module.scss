@@ -2,7 +2,6 @@
 @use "../../styles/utils/variables" as *;
 
 .contact {
-
   &Container {
     @include containerSmall;
     padding: 4rem 0;
@@ -42,6 +41,7 @@
   .links {
     width: 50%;
     text-align: center;
+    font-family: $font-body;
 
     @include screenSmall {
       width: 80%;
