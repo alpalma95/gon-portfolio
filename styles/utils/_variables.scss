@@ -1,5 +1,8 @@
-// @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;900&family=Raleway:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap");
+@font-face {
+  font-family: "Ropa Sans";
+  src: url("/RopaSans-Regular.ttf");
+  font-weight: 400;
+}
 
 $font-titles-big: 3rem;
 $font-titles-small: 2rem;
